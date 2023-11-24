@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formlar</title>
+</head>
+<body>
+    <form action="/Home/Register">
+        <!-- required: Alanlanların doldurulmasını zorunlu tutmak için kullanılır.
+             maxlength: Girilecek maksimum karakter sayısını belirtir. -->
+        <p>
+            Ad: <input type="text" name="ad" maxlength="5" placeholder="Adınızı giriniz" required>
+        </p>
+        <p>
+            Soyad: <input type="text" name="soyad" placeholder="Soyadınızı giriniz" required>
+        </p>
+        <p>
+            Cinsiyet: <select name="cinsiyet"required>
+                <option>Erkek</option>
+                <option>Kadın</option>
+            </select>
+        </p>
+        <p>
+            Telefon: <input type="tel" name="telefon" placeholder="Telefon numaranızı giriniz" required>
+        </p>
+        <p>
+            E mail: <input type="email" name="email" placeholder="Size ait e-mail adresi giriniz" required>
+        </p>
+        <p>
+            Kullanıcı Adı: <input type="text" name="kullanıcı_adı" placeholder="kullanıcı_adı giriniz" required>
+        </p>
+        <p>
+            Şifre: <input type="password" name="sifre" placeholder="Sifrenizi giriniz" required>
+        </p>
+        <p>
+            Beni Hatırla<input type="checkbox" name="beni_hatırla"> <input type="submit" value="Kaydet" name="kaydet"> <input type="reset" name="Sıfırla">
+        </p>
+        <br>
+        <p>
+            Erkek <input type="radio" name="Cinsiyet"required>
+            Kadın <input type="radio" name="Cinsiyet"required>
+        </p>
+        <p>
+            Cinsiyet: <select multiple name="cinsiyet2" required>
+                <option>Erkek</option>
+                <option>Kadın</option>
+            </select>
+        </p>
+    </form>
+</body>
+</html>
