@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt Formu Uygulama</title>
+</head>
+<body>
+
+    <h2>Lütfen Kayıt Formunu Eksiksiz Doldurunuz.</h2>
+    <hr>
+
+    <form>
+        <h4>Hesap Bilgilerniz</h4>
+        <p>
+            Kullanıcı Adı: <input type="text" placeholder="Kullanıcı adı giriniz" name="kullanıcı_adı" required>
+        </p>
+        <p>
+            Eposta: <input type="email" placeholder="e-posta giriniz" name="eposta" required>
+        </p>
+        <p>
+            Parola: <input type="password" placeholder="parola giriniz" name="parola" required>
+        </p>
+    <h4>
+        Kişisel Bilgilerniz
+    </h4>
+    
+        <p>
+            Ad: <input type="text" placeholder="adnızı giriniz" name="ad" required>
+        </p>
+        <p>
+            Soyad: <input type="text" placeholder="soyadınızı giriniz" name="soyad" required>
+        </p>
+        <p>
+            Şehir: <select name="sehir">
+                <option>Seçiniz</option>
+                <option>Diyarbakır</option>
+                <option>Van</option>
+                <option>Mardin</option>
+            </select>
+        </p>
+        <p>
+            Cinsiyet: <input type="radio" name="cinsiyet"> Erkek
+                       <input type="radio" name="cinsiyet"> Kadın
+        </p>
+        <p>
+            Hobileriniz: <input type="radio"> Kitap okuma
+                         <input type="radio"> Gezmek
+                         <input type="radio"> Spor
+                         <input type="radio"> Sinema
+        </p>
+        <p>
+            <input type="submit" value="Kaydet" name="kaydet"> <input type="reset" value="Sıfırla" name="sıfırla">
+        </p>
+    </form>
+</body>
+</html>
