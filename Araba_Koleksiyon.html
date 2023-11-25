@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supra collection</title>
+    <script>
+
+        function displayDate() {
+            document.getElementById("name").innerHTML=Date();
+        }
+    </script>
+</head>
+<body>
+    <img id="demo1" width=300px  src="img/Toyota-supra.png">
+    <br>
+    <p id="name">
+        Supra
+    </p>
+    <input  type="text" id="input">
+    <button type="button" onclick="document.getElementById('name').innerHTML=document.getElementById('input').value">Search</button>
+    <Button type="button" onclick='document.getElementById("demo1").src="img/Toyota-supra-red.png"'>Red!</Button>
+    <Button type="button" onclick='document.getElementById("demo1").src="img/Toyota-supra.png"'>Gray!</Button>
+    <Button type="button" onclick='document.getElementById("demo1").style.width="1000px"'>Big!</Button>
+    <Button type="button" onclick='document.getElementById("demo1").style.width="300px"'>Small!</Button>
+    <Button type="button" onclick='document.getElementById("demo1").src="img/Toyota-supra.png"'>Come Back!</Button>
+    <Button type="button" onclick='document.getElementById("demo1").style.display="none"'>Click for hide!</Button>
+    <Button type="button" onclick='document.getElementById("demo1").style.display="block"'>Click for show!</Button>
+    <Button type="button" onclick='document.getElementById("name").innerHTML=displayDate().value'>The time is?</Button>
+    
+    <!-- <button onclick="displayDate()">The time is?</button> -->
+
+</body>
+</html>
