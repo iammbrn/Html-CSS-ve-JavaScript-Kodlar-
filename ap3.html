@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function AllHeaders()
+        {
+            var headers= document.getElementsByTagName("h3");
+            for (header of headers)
+            {
+                header.style.color="blue";
+            }
+        }
+    
+        function HeadersByClassName()
+        {
+            var headers= document.getElementsByClassName("grup1");
+            for (header of headers)
+            {
+                header.style.color="red";
+            }
+        }
+        
+        function HeaderById()
+        {
+            var header=document.getElementById("baslik1");
+            header.style.color="purple"
+        }
+    </script>
+</head>
+
+<body>
+    <h3 id="baslik1">Brinci Başlık</h3>
+    <h3>İkinci Başlik</h3>
+    <h3 class="grup1">Üçüncü Başlık</h3>
+    <h3 class="grup1">Dördüncü Başlık</h3>
+    
+
+    <button onclick="AllHeaders();">Tum Baslıklar</button>
+    <button onclick="HeadersByClassName();">Belirli bir sınıftaki başlıklar</button>
+    <button onclick="HeaderById();">Bir Başlık</button>
+</body>
+</html>

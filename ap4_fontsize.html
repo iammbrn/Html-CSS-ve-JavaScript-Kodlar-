@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<script>
+    function IncreaseFont()
+    {
+        var item=document.getElementById("paragraf");
+        var fontSize=item.style.fontSize;
+        fontSize=Number(fontSize.replace("px",""));
+        fontSize+=2;
+        item.style.fontSize=fontSize+("px");
+
+    }
+    function DecreaseFont()
+    {
+        var item=document.getElementById("paragraf");
+        var fontSize=item.style.fontSize;
+        fontSize=Number(fontSize.replace("px",""));
+        fontSize-=2;
+        item.style.fontSize=fontSize+("px");
+    }
+</script>
+</head>
+<body>
+    <p id="paragraf" style="font-size: 12px;">Font değeri değişen paragraf</p>
+    <button onclick="IncreaseFont();">Font büyüt</button>
+    <button  onclick="DecreaseFont();">Font Küçült</button>
+</body>
+</html>
