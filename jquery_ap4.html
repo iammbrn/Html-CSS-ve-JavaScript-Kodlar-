@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+
+
+    <script>
+        $(function()
+        {
+            $("#btn1").click(function()
+            {
+                $(".text1").text("New text1");
+                
+            }).dblclick(function()
+            {
+                $(".text1").text("Hello")
+            });
+
+            $("#btn2").click(function()
+            {
+                $(".text2").text("New text2");
+            }).dblclick(function()
+            {
+                $(".text2").text("Hi");
+            });
+
+            $("#btn1").mousedown(function()
+            {
+                $(".text1").html(1000);
+            })
+            
+            $("#btn3").mouseenter(function()
+            {
+              alert("Welcome who are you!.")  
+            })
+
+
+            $("#btn2").mousedown(function()
+            {
+                $(".text2").html(1000);
+            })            
+        });
+    </script>
+
+    <style>
+        p,button{
+            background-color: green;
+            border: 10px solid black;
+        }
+        #btn2{
+            margin-left: 100px
+        }
+        #btn3{
+            margin-left: 150px
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <p class="text1">Hello</p>
+    <p class="text2">Hi</p>
+    <p class="text3">Welcome</p>
+
+    <button id="btn1">Click to change text1</button>
+    <button id="btn2">Click to change text2</button>
+    <button id="btn3">Click to change text3</button>
+
+</body>
+</html>

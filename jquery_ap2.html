@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    
+    <script>
+        $(function(){
+
+        $("#btn1").click(function()
+        {
+            $("#img").hide(2000);
+        });
+        $("#btn2").click(function()
+        {
+            $("#img").show(2000);
+        });
+        });
+
+
+
+
+
+    </script>
+</head>
+<body>
+    <img id="img" width="250px" src="img/Toyota-supra.png" alt="">
+
+    <button id="btn1" width="30px">Img Hide</button>
+    <button id="btn2" width="30px">IMg Show</button>
+
+
+</body>
+</html>

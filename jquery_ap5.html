@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(function()
+        {
+            $("#btn1").click(function()
+            {
+                $("#text1").text("But i don't want");
+
+            }).dblclick(function()
+            {
+                var content=$("#text2")
+                $("#text1").text(content.val());   
+            })   
+        });
+    </script>
+
+    <style>
+        html{
+            background-color: darkolivegreen;
+        }
+
+        p,input,button{
+            background-color: aqua;
+            border: 10px solid black;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <p id="text1">You just want attention.</p>
+
+    <input id="text2" type="text">
+
+    <button id="btn1">Click to change text1</button>
+</body>
+</html>

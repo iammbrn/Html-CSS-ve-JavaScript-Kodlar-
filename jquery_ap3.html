@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(function(){
+            $("#btn1").click(function(){
+                $("p:contains('Hid')").hide(2000)
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>If you hide the paragraphs with the word secret in them, you will find the paragraph with my name.</h1>
+    <p> Text1 :Hidden paragraph one</p>
+    <p> Text2 :Hello my name is Baran</p>
+    <p> Text3 :My name Hidden</p>
+    <p> Text4 :My name is Hid in Text2</p>
+
+    <button id="btn1">Click to "<b>Hide</b>" paragraphs that contain the word secret</button>
+    
+</body>
+</html>

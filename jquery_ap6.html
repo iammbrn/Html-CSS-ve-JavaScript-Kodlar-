@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(function()
+        {
+            $("#btn1").click(function()
+            {
+                var nums_total=0;
+                nums_total=parseInt($("#num1").val())+parseInt($("#num2").val());
+
+                $("#total").val(nums_total);
+            });
+        });
+    </script>
+</head>
+<body>
+    <p>
+        Number1 : <input id="num1" type="text"> <br>
+        Number2 : <input id="num2" type="text"> <br>
+        Total   : <input id="total" type="text"><br>
+    </p>
+    <button id="btn1">Total</button>
+</body>
+</html>

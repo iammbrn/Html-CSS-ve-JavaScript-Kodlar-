@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(function()
+        {
+            $("#btn1").click(function()
+            {   
+                var total=0;
+                $(".inp").each(function()
+                {
+                    if(!isNaN(this.value) && (this.value!=""))
+                    {
+                        total+=parseInt(this.value);
+                    }  
+                });
+                
+                $("#total").val(total);
+            });
+
+            
+        });
+        
+    </script>
+</head>
+<body>
+    Number1 : <input class="inp" id="num1" type="text"> <br>
+    Number2 : <input class="inp" id="num2" type="text"> <br>
+    Number3 : <input class="inp" id="num3" type="text"> <br>
+    Number4 : <input class="inp" id="num4" type="text"> <br>
+    Number5 : <input class="inp" id="num5" type="text"> <br>
+    Number6 : <input class="inp" id="num6" type="text"> <br>
+    Number7 : <input class="inp" id="num7" type="text"> <br>
+    Number8 : <input class="inp" id="num8" type="text"> <br>
+    Total   : <input id="total" type="text"><br> 
+    <button id="btn1">Total</button>   
+</body>
+</html>
